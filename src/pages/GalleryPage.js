@@ -5,19 +5,16 @@ import{motion} from 'framer-motion';
 import { pageAnimation,fade,container } from '../animation';
 
 const GalleryPage=()=>{
-
-    return(
+     return(
      <Wrapper variants={pageAnimation} exit="exit" animate="show" initial="hidden">
      <motion.div variants={container} initial="hidden" animate="show" className="gallery-image">
      {Images.map(image=>{
      return <div key={image}> 
      <motion.img variants={fade} src={image} alt='portrait'/> 
      </div>
-        
-      })}
- </motion.div>
-
-</Wrapper>
+    })}
+    </motion.div>
+    </Wrapper>
 
     )
 };
@@ -89,8 +86,6 @@ const Wrapper=styled(motion.div)`
                 height:190px;
                 margin:0rem 0rem;
             }
-           
-          
         }
     }
     @media screen and (min-width:378px) and (max-width:353px){
@@ -106,9 +101,7 @@ const Wrapper=styled(motion.div)`
                 height:190px;
                 margin:0rem 0.6rem;
             }
-           
-          
-        }
+         }
     }
     @media screen and (max-width:353px){
         width:100%;
@@ -123,8 +116,6 @@ const Wrapper=styled(motion.div)`
                 height:190px;
                 margin:0rem 0rem;
             }
-           
-          
         }
     }
 `;

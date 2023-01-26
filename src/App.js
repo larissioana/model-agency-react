@@ -13,17 +13,14 @@ import {Route,Routes,useLocation} from 'react-router-dom';
 //Animation
 import { AnimatePresence } from "framer-motion";
 
-
 function App() {
  const location=useLocation();
   return (
     <div className="App">
-  
     <GlobalStyle/>
     <AnimatePresence mode='wait'>
     <Nav/>
- 
-      <Routes location={location} key={location.pathname}>
+    <Routes location={location} key={location.pathname}>
       <Route path='/' element={<HomePage/>}></Route>
       <Route path='/about-us' element={<AboutPage/>}></Route>
       <Route path='/gallery' element={<GalleryPage/>}></Route>

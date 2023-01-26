@@ -6,6 +6,7 @@ import styled from 'styled-components';
 //Animations
 import{motion} from 'framer-motion';
 import { pageAnimation } from '../animation';
+
 const HomePage=()=>{
     return(
     <Wrapper variants={pageAnimation} exit="exit" animate="show" initial="hidden">

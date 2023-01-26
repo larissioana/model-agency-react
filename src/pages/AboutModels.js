@@ -1,11 +1,9 @@
 import {useState} from 'react';
 import models from '../data';
 import styled from 'styled-components';
-
 //Animations
 import{motion} from 'framer-motion';
 import { pageAnimation } from '../animation';
-
 
 const AboutModels=()=>{
     const[index,setIndex]=useState(0);

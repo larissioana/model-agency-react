@@ -2,27 +2,19 @@
 import styled from 'styled-components';
 import {useRef,useEffect,useState} from 'react';
 import { ImagesCarousel } from '../Images';
-import Spinner from './Spinner';
 import{motion} from 'framer-motion';
 import { titleAnim,titleAnim1 } from '../animation';
 import { useScrollAnimation } from '../useScrollAnimation';
 
 
 const Home=()=>{
-   
    const [width,setWidth]=useState(0);
-   const[loading,setLoading]=useState(false);
    const carousel=useRef();
    useEffect(()=>{
    setWidth(carousel.current.scrollWidth-carousel.current.offsetWidth);
-   setLoading(true);
-   setTimeout(()=>{
-   setLoading(false);
-   },300)
    },[]);
- //Scroll Anim
 
- const[element,controls]=useScrollAnimation();
+const[element,controls]=useScrollAnimation();
     return(
         <Wrapper>
             <motion.div ref={element}className="home-title">
@@ -34,16 +26,15 @@ const Home=()=>{
         <motion.div drag='x' dragConstraints={{right:0,left:-width}} className='inner-carousel'>
          {ImagesCarousel.map(image=>{
             return(
-              <div  className='item' key={image}>
-                {loading? <Spinner/>:
-              <img  src={image} alt='portrait'/> }
+            <div  className='item' key={image}>
+            <img  src={image} alt='portrait'/> 
             </div>
             )
   })}
         </motion.div>
         </motion.div>
 
-        </Wrapper>
+</Wrapper>
     )
 }
 

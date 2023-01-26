@@ -8,7 +8,6 @@ const Header=()=>{
         <img  src={portrait} alt='portrait'/>
         </div>
         </Wrapper>
-       
     )
 };
 export default Header;

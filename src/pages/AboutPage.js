@@ -6,10 +6,8 @@ import{motion} from 'framer-motion';
 import { pageAnimation } from '../animation';
 
 const AboutPage=()=>{
-
-    //Animations
- 
-    const titleAnimation={
+    
+const titleAnimation={
         hidden:{opacity:0},
         show:{opacity:1, transition:{duration:1}}
     };

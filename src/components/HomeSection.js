@@ -3,11 +3,10 @@ import { ImagesModels } from "../Images";
 import{motion} from 'framer-motion'
 import { fade,container } from "../animation";
 import { useScrollAnimation } from "../useScrollAnimation";
+
 const HomeSection=()=>{
-    //Animation
-    const[element,controls]=useScrollAnimation();
+const[element,controls]=useScrollAnimation();
     return(
-        
         <Wrapper>
             <h1>Laya Agency</h1>
             <div className="description">
@@ -23,7 +22,6 @@ const HomeSection=()=>{
             <hr/>
              <h2>Welcome to the Model of the WEEK.</h2>
              <h4>Cassandra</h4>
-             
              <motion.div ref={element}  className="gallery">
         {ImagesModels.map(image=>{
             return <motion.div variants={container} initial='hidden' animate={controls} className="item" key={image}>
@@ -31,8 +29,7 @@ const HomeSection=()=>{
                 </motion.div>
          })}
          </motion.div>
-         
-        </Wrapper>
+         </Wrapper>
     )
 };
 

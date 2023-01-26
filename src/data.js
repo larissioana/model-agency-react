@@ -31,7 +31,7 @@ import events12 from './images/event12.jpg';
 import events13 from './images/event13.jpg';
 
 //social Links
-import {FaFacebookSquare,FaInstagramSquare,FaYoutubeSquare} from 'react-icons/fa';
+import {FaFacebookSquare,FaInstagramSquare,FaGithubSquare} from 'react-icons/fa';
 
 export const social=[
     {
@@ -48,7 +48,7 @@ export const social=[
     {
         id:3,
         url:'https://www.youtube.com',
-        icon:<FaYoutubeSquare/>,
+        icon:<FaGithubSquare/>,
     }
 ];
 export const links=[

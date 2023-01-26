@@ -5,7 +5,7 @@ import { fade } from '../animation';
 import {motion} from 'framer-motion'
 
 const HomeSection1=()=>{
-    //Animation
+
  const[element,controls]=useScrollAnimation();
     return(
         <>

@@ -48,7 +48,7 @@ export default Nav;
 const NavLinksStyle=styled.nav`
       height:4rem;
       background: rgba(56, 55, 55, 0.8);
-      backdrop-filter: blur(2px);
+      backdrop-filter: blur(5px);
       position:absolute;
       top:3%;
       width:100%;
@@ -109,7 +109,7 @@ const NavLinksStyle=styled.nav`
         top:8rem;
         left:-3.5rem;
         width:100%;
-        background:rgb(62, 61, 61);
+        backdrop-filter: blur(55px);
         min-height:70vh;
         padding:2rem 3rem;
         border-radius: .2rem;
