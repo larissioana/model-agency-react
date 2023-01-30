@@ -10,19 +10,16 @@ const[element,controls]=useScrollAnimation();
         <Wrapper>
             <h1>Laya Agency</h1>
             <div className="description">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa reprehenderit animi at tenetur? Quod delectus laboriosam aperiam, eius quas a, aspernatur consequatur deserunt distinctio, impedit voluptate ipsa dolor vitae quo!</p>
-            <br/>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis voluptatem eos consequuntur provident earum explicabo a fuga? Minus vitae fugit incidunt hic tempore recusandae ad perspiciatis harum distinctio facere?</p>
+            <p>With a large portfolio of clients, which includes the most prestigious international and national brands, Laya Agency is successful in all branches of fashion: campaigns, editorials, fashion shows, catalogs, TV commercials, fashion festivals, respectively the organizers of FASHIONN WEEK.</p>
             </div>
             <div className="description">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa reprehenderit animi at tenetur? Quod delectus laboriosam aperiam, eius quas a, aspernatur consequatur deserunt distinctio, impedit voluptate ipsa dolor vitae quo!</p>
             <br/>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis voluptatem eos consequuntur provident earum explicabo a fuga? Minus vitae fugit incidunt hic tempore recusandae ad perspiciatis harum distinctio facere?</p>
+            <p>We discovered, launched and promoted many top models and stars. We constantly impress over 45 models in different markets such as: New York, London, Paris, Milan, Singapore, Hong Kong, Beijing, Shanghai, Seoul, Istanbul or Taipei. Our agency has all the necessary approvals for the legal development of artistic impresario activity.</p>
             </div>
             <hr/>
-             <h2>Welcome to the Model of the WEEK.</h2>
-             <h4>Cassandra</h4>
-             <motion.div ref={element}  className="gallery">
+            <h2>Welcome to the Model of the WEEK.</h2>
+            <h4>Cassandra</h4>
+            <motion.div ref={element}  className="gallery">
         {ImagesModels.map(image=>{
             return <motion.div variants={container} initial='hidden' animate={controls} className="item" key={image}>
                <motion.img variants={fade} src={image} alt='models'/>
@@ -69,7 +66,7 @@ h4{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    padding:0rem 2rem;
+    padding:1rem 2rem;
     overflow-x:hidden;
     max-width:90%;
   

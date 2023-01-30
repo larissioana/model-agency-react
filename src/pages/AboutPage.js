@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import model from '../images/models5.jpg';
-import {useState} from 'react';
+
 //Animations
 import{motion} from 'framer-motion';
 import { pageAnimation } from '../animation';
@@ -15,20 +15,14 @@ const titleAnimation={
         hidden:{opacity:0,x:100},
         show:{opacity:1, x:0, transition:{duration:1.5}}
     };
-    const [readMore, setReadMore]=useState(false);
-    const info=' Modi qui nostrum dicta, optio minus saepe nisi libero autem illum quos iste minima quibusdam magni quis amet voluptatibus iusto laudantium excepturi tempora adipisci! Et delectus deleniti aspernatur similique esse error nobis.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi qui nostrum dicta, optio minus saepe nisi libero autem illum quos iste minima quibusdam magni quis amet voluptatibus iusto laudantium excepturi tempora adipisci! Et delectus deleniti aspernatur similique esse error nobis et delectus deleniti.ibero autem illum quos iste minima quibusdam magni quis amet voluptatibus iusto laudantium excepturi tempora adipisci! Et delectus deleniti aspernatur similique esse error nobis.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi qui nostrum dicta, optio minus saepe nisi libero autem illum quos iste minima quibusdam magni quis amet voluptatibus iusto laudantium excepturi tempora adipisci! Et delectus deleniti aspernatur similique esse error nobis et.';
+  
     return(       
         <Wrapper variants={pageAnimation} exit="exit" animate="show" initial="hidden">
            <motion.div  className="left">
             <motion.h3 variants={titleAnimation} initial='hidden' animate='show'>
                 About <motion.span variants={titleAnimation} initial='hidden' animate='show'>Laya Agency</motion.span>
             </motion.h3>
-            <motion.p variants={titleAnimation} initial='hidden' animate='show'>{info}</motion.p>
-            <p>
-           {readMore? info :`${info.substring(0,160)}`}
-            <button onClick={()=>setReadMore(!readMore)}>
-             {readMore? 'Show Less' : 'Read More'}</button>
-             </p>
+            <p>Initially conceived in 2000 as an advertising agency, Laya Agency soon continued its activity in the modeling industry. Since its beginnings, Laya Agency stood out as an agency with a cosmopolitan team and a top management that built the careers of a large number of international models from scratch. Since its beginnings, Laya Agency has distinguished itself as an agency with a cosmopolitan team and top management. Laya Agency has built the careers of many national and international models. Our agency represents professional models and offers exceptional management: it supports beginners with innovative training courses, offers modeling contracts and countless promotion opportunities.</p>
            </motion.div>
            <motion.div className="right" variants={photoAnimation} initial='hidden' animate='show'>
             <img src={model} alt='model'/>

@@ -114,7 +114,8 @@ const NavLinksStyle=styled.nav`
         padding:2rem 3rem;
         border-radius: .2rem;
         transform: translateX(-200%);
-       transition:transform .7s ease-out;
+        transition:transform .7s ease-out;
+      
         
         .links{
             display:block;
